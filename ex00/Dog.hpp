@@ -1,13 +1,23 @@
 #ifndef DOG_HPP
 # define DOG_HPP
 
-class Dog {
+#include <iostream>
+#include <string>
+# include "Animal.hpp"
+
+class Dog: public Animal {
 private:
-    /* data */
 
 public:
-    Dog(arguments);
+    Dog( void );
+    Dog( const Dog &src );
     ~Dog( void );
+
+    //functions
+    void        makeSound( void ) const;
+
+    //operator
+    Dog&          operator=(const Dog &src);
 };
 
 #endif

@@ -10,16 +10,18 @@
 #                                                                              #
 # **************************************************************************** #
 
-TARGET =		Fragtrap
+TARGET =		Farm
 
 CXX =			c++
 
-CXXFLAGS =		-Wall -Wextra -Werror -I. #-g3 -fsanitize=address
+CXXFLAGS =		-Wall -Wextra -Werror -I. -g3 -fsanitize=address
 
 SRCS =			main.cpp				\
 				Animal.cpp				\
 				Dog.cpp					\
 				Cat.cpp					\
+				WrongAnimal.cpp			\
+				WrongCat.cpp			\
 
 OBJS =			$(SRCS:.cpp=.o)
 

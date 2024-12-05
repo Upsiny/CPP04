@@ -11,11 +11,14 @@ protected:
 public:
     Animal( void );
     Animal(const Animal &src);
-    ~Animal( void );
+    virtual ~Animal( void );
 
     //get & set
     void        setType(std::string type);
-    std::string getType( void );
+    std::string getType( void ) const ;
+
+    //functions
+    void        virtual makeSound( void ) const ;
 
     //operator
     Animal&          operator=(const Animal &src);
