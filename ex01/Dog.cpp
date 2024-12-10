@@ -38,6 +38,7 @@ std::string Dog::getIdea(int i) const {
 
 //operator
 Dog&     Dog::operator=(const Dog &src) {
+    this->_brain = new Brain(*src._brain);
     this->_type = src.getType();
     return *this;
 }

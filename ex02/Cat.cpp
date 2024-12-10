@@ -23,6 +23,7 @@ Cat::~Cat( void ) {
 
 //operator
 Cat&     Cat::operator=(const Cat &src) {
+    this->_brain = new Brain(*src._brain);
     this->_type = src.getType();
     return *this;
 }

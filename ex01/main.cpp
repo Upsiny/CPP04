@@ -5,6 +5,12 @@
 
 int    main() {
 
+    // Dog *tmp = new Dog();
+    // tmp->setIdeas(0, "miam");
+    // Animal*     test = new Dog(*tmp);
+    // delete  tmp;
+    // std::cout << test->getIdea(0) << '\n';
+
     Animal*    spaRefuge[4];
 
     for (int i = 0 ; i < 4 ; i ++) {
